@@ -161,7 +161,8 @@ public class SimpleListVersion2 {
 		return list[count - 1]; 
 	}
 	/**
-	 * this will return the size of the lsit
+	 * this will return the size of the list
+	 * it does it by counting the number of the elements in the list as it ascends the for loop, than returns that value
 	 * @return
 	 */
 	public int size() {
