@@ -1,7 +1,7 @@
 /**
  * Hunter Dyer, class ID: 352, Assignment #2
- * This java file is the SimpleList, which is an array that can hold up to 10 elements. 
- * There are different methods that can modify the list, such as adding, removing, or searching the list. 
+ * This java file is the SimpleListVersion2, which is a modification to the original SimpleList.java
+ * The new methods to this one are append, first, last, and size
  */
 
 package cse360assign2;
