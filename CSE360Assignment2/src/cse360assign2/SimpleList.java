@@ -34,6 +34,7 @@ public class SimpleList {
  * The else is when the list is full. It will kick out the 10th element, descend the list from the back
  * shift each value over one, then add the new value to the front
  * All the 3 cases will keep track of values with count++ every time something is added
+ * the new list = new int[15] is increasing the size of the original list by 50%
  * @param value
  */
 	public void add(int value) {
@@ -53,7 +54,8 @@ public class SimpleList {
 			for (int i = count; i >= 0; i--) {
 				list [i + 1] = list[i]; 
 			}
-			list[0] = value; 
+			list[0] = value;
+			list = new int[15]; 
 			count++;
 		}
 	}
@@ -68,7 +70,10 @@ public class SimpleList {
 		int index = search(value); 
 		if (index != -1) {
 			for (int i = index; i < count - 1; i++) {
-				list[i] = list[i - 1]; 
+				list[i] = list[i - 1];
+			if (count <= 2.5 && count > 1) {
+				list = new int[count];
+			}
 			}
 			count--;
 		}
